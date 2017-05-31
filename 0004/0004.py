@@ -10,7 +10,7 @@ def get_count_table(file='input.txt',
     if lower:
         txt = txt.lower()
     words = txt.split(' ')
-    # 统计单词出现的个数
+    # 统计字母出现的个数
     # words = txt.replace(' ','')
     dic = {}
     for word in words:
