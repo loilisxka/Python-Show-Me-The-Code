@@ -2,7 +2,7 @@ import operator
 
 
 def get_count_table(file='input.txt',
-                    ignore=('.', ',', ':', '?', '!', '"', '”', '“', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'),
+                    ignore=('.', ',', '\n', ':', '?', '!', '"', '”', '“', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'),
                     lower=True):
     txt = open(file).read()
     for i in ignore:
