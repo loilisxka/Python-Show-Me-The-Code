@@ -1,0 +1,14 @@
+1.引入PIL模块中的Image,ImageDraw,ImageFont,ImageFliter。4中方法
+分别作用为，生成一张图片，在图片上draw,在图片上输入字体，模糊图片
+顺便引入random模块
+2.定义三个函数，利用random，随机生成字母和填充的颜色。
+3.利用Image.new((x,y),(255,255,255))来生成一张全新的图片
+4.调用ImageFont.truetype('arial.ttf', 36)确定写入图片的字体格式以及大小。
+5.调用ImageDraw.draw(image)来生成一个可以修改涂写的图片。
+6.for x in range(weight):
+	for y in range(high):
+		draw.point((x,y),'随机生成颜色的函数')
+通过以上一段代码来填充图片中的所有像素
+7.利用draw.font()来填入我们产生的随机字母
+8.利用image.fliter(ImageFliter(BLUR))来对图片进行模糊操作
+9.利用imgae.save()来保存图片
